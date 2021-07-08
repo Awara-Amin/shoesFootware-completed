@@ -1,0 +1,120 @@
+. {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cb021c;
+  font-family: "Roboto, sans-serif";
+  margin: 0;
+  /* wow the (background color) which changes during 1s with patern ease-in-out  */
+  transition: background 1s ease-in-out;
+}
+
+.humburger {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.phone {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  text-align: center;
+  color: white;
+}
+
+.logo i {
+  font-size: 3.5rem;
+}
+
+.logo h2 {
+  font-weight: normal;
+  font-style: italic;
+  margin: 0 0 20px;
+}
+
+.logo p {
+  margin: 0;
+  color: black;
+}
+
+.carousel-container{
+  overflow: hidden;
+  position: relative;
+  width:100vw;
+  height: 60vh;
+  margin-top: 5rem;
+}
+
+.carousel {
+  display: flex;
+  position: absolute;
+  left:0;
+  top:0;
+  transform: translateX(0);
+  /*          transform here means the picture moves along x axies, 1s the movment takes 1s (change it to see it) */
+  transition: transform 1s ease-in-out;/*  ease-in-out patern how the picture should go*/
+}
+
+.slide {
+  /* background-color: purple; */
+  width:100vw;
+  text-align: center;
+  /* height: 40vh; */
+}
+
+.slide img {
+  object-fit: cover;
+  height:400px;
+  width:400px;
+  border-color: green;
+  /* border-radius: 40%; */
+}
+
+.slide h1 {
+  color: white;
+  font-size: 4rem;
+  /* wow! - takes twords the top */
+  margin-top: -2rem;
+}
+
+.slide a {
+  background-color: #40020e;
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+
+
+.arrow{
+  background-color: transparent;
+  position: absolute;
+  top:30%;
+  /*  */
+  /* transform: translateY(-50%); */
+  font-size: 5rem;
+  color: black;
+  opacity: 0.5;
+  cursor: pointer;
+
+}
+.left-arrow{
+  left: 2rem;
+
+}
+
+.right-arrow{
+  right: 2rem;
+
+}
